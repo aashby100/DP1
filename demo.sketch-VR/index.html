@@ -16,12 +16,15 @@
 <a-entity cursor="fuse: true;" position="0 0 -1" scale=".01 .01 .01" geometry="primitive: ring" material="color: #fff; shader: flat">
 </a-entity>
 </a-entity>
-<a-sphere position="0 2 -8" rotation="0 0 0" scale="1 1 1" color="purple">
+<a-sphere position="6 2 -8" rotation="0 45 45" scale="1 1 1" color="purple">
         <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
-          to="0 2.2 -6"></a-animation>
-        <a-animation attribute="scale" begin="mouseenter" dur="300" to="2 2 2"></a-animation>
+          to="6 2 -8"></a-animation>
+        <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+        <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
         <a-animation attribute="scale" begin="mouseleave" dur="300" to="1 1 1"></a-animation>
-      </a-sphere>  
+      </a-sphere>
+        
+  <a-text value="Ask a Question" color="Blue" position="1.4 2 -3" scale="1.5 1.5 1.5"></a-text> 
   
 </a-scene>
 </body>
